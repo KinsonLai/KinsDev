@@ -68,14 +68,14 @@ a {
     width: 300px;
     border: 1px solid black;
     border-radius: 10px;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
 .item:hover {
     height: 550px;
     width: 350px;
     background-color: lightgray;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
 .item h1 {
