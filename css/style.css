@@ -75,7 +75,7 @@ a {
     height: 550px;
     width: 350px;
     background-color: lightgray;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
 }
 
 .item h1 {
