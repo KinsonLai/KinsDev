@@ -1,23 +1,5 @@
-html, body {
-    margin: 0px;
-    padding: 0px;
-    outline: none;
-    border: 0px;
-}
-
-.header {
-    text-align: center;
-    color: white;
-    background-color: #1f1f21;
-    margin: 0;
-    padding: 3px;
-}
-
 .container {
     background-color: #242447;
-    margin: 0;
-    height: 1000px;
-    padding: 3px;
 }
 
 .container > p {
@@ -26,8 +8,4 @@ html, body {
     font-size: 20px;
     position: relative;
     bottom: -50px;
-}
-
-.footer {
-    background-color: #3b3b47;
 }
