@@ -66,3 +66,17 @@ html {
 .footer {
     background-color: #2e2e30;
 }
+
+@media only screen and (max-device-width: 480px) {
+    .container {
+        height: 2100px;
+    }
+
+    .brand {
+        font-size: 60px;       
+    }
+
+    .nav li a {
+        font-size: 50px;
+    }
+}
