@@ -5,7 +5,7 @@ html, body {
     border: 0px;
 }
 
-#header {
+.header {
     text-align: center;
     color: white;
     background-color: #1f1f21;
@@ -13,14 +13,14 @@ html, body {
     padding: 3px;
 }
 
-#container {
+.container {
     background-color: #242447;
     margin: 0;
-    height: 500px;
+    height: 1000px;
     padding: 3px;
 }
 
-#container > p {
+.container > p {
     color: white;
     text-align: center;
     font-size: 20px;
@@ -28,6 +28,6 @@ html, body {
     bottom: -50px;
 }
 
-#footer {
+.footer {
     background-color: #3b3b47;
 }

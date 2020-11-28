@@ -5,7 +5,7 @@ html, body {
     border: 0px;
 }
 
-#header {
+.header {
     text-align: center;
     color: white;
     background-color: #1f1f21;
@@ -13,30 +13,51 @@ html, body {
     padding: 3px;
 }
 
-#container {
-    background-color: #242447;
+.container {
     margin: 0;
-    height: 500px;
+    height: 1000px;
     padding: 3px;
 }
 
-#container > h3 {
+#c1.container {
+    background-color: #202463;
+}
+
+#c2.container {
+    background-color: #070a40;
+}
+
+#c1.container > h3 {
     text-align: center;
     color: white;
     position: relative;
     bottom: -50px;
+    font-size: 50px;
 }
 
-#container > a {
-    float: none;
-    position: absolute;
-    transform: translate(-50%, -50%);
+a {
+    position: relative;
+    display: block;
+    width: 10%;
+    height: 5%;
+    margin: auto;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    bottom: -5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
 }
 
-#container > a:hover {
+a {
+    text-decoration: none;
+}
+
+a:hover {
     background-color: lightslategray;
 }
 
-#footer {
+.footer {
     background-color: #3b3b47;
 }
