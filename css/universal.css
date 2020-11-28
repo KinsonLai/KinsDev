@@ -27,8 +27,11 @@ header > h3 {
 
 .container {
     margin: 0;
-    height: 1000px;
     padding: 3px;
+}
+
+.container:not(#c3) {
+    height: 1000px;
 }
 
 .footer {
@@ -68,7 +71,7 @@ html {
 }
 
 @media only screen and (max-device-width: 480px) {
-    .container {
+    .container:not(#c3) {
         height: 2100px;
     }
 
