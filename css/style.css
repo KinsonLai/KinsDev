@@ -150,6 +150,10 @@ a {
     #c3.container {
         height: 1000px;
     }
+
+    #c4.container {
+        display: block;
+    }
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -176,5 +180,9 @@ a {
 
     .item p:not(.item-title) {
         font-size: 30px;
+    }
+
+    #c4.container {
+        display: none;
     }
 }
