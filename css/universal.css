@@ -33,6 +33,9 @@ header > h3 {
 
 .footer {
     background-color: #3b3b47;
+    color: white;
+    margin: 0;
+    padding: 3px;
 }
 
 ::-webkit-scrollbar {
