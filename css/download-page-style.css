@@ -49,3 +49,17 @@
         display: block;
     }
 }
+
+@media only screen and (max-device-width: 768px) {
+    .container > .title {
+        font-size: 50px;
+    }
+
+    .d-item p {
+        font-size: 30px;
+    }
+
+    .d-item a {
+        font-size: 20px;
+    }
+}
