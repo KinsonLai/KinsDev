@@ -74,6 +74,10 @@ html {
     background-color: #2e2e30;
 }
 
+.this-page-nav {
+    background-color: lightslategray;
+}
+
 @media only screen and (min-device-width: 769px) {
     .title {
         font-size: 50px;
