@@ -91,20 +91,8 @@
 }
 
 @media only screen and (min-device-width: 769px) {
-    #c3.container > .title {
-        font-size: 50px;
-    }
-
-    #c2.container > .title {
-        font-size: 50px;
-    }
-
     .b1 a {
         font-size: 20px;
-    }
-
-    #c1.container > .title {
-        font-size: 50px;
     }
 
     .item-title {
@@ -113,13 +101,11 @@
 }
 
 @media only screen and (max-device-width: 768px) {
-    .title {
-        font-size: 80px;
-    }
+    
 
     .b1 a {
-        font-size: 30px;
-        width: 200px;
+        font-size: 50px;
+        width: 300px;
     }
 
     #c2.container p:not(.title) {
