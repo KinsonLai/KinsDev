@@ -31,10 +31,6 @@
     font-family: 'Cinzel', serif;
 }
 
-a {
-    text-decoration: none;
-}
-
 .b1 a:hover {
     background-color: lightslategray;
 }
@@ -62,6 +58,7 @@ a {
 }
 
 .item {
+    overflow: auto;
     min-height: 600px;
     min-width: 500px;
     border: 1px solid black;
@@ -88,49 +85,7 @@ a {
     padding: 100px;
 }
 
-#c4.container > .title {
-    text-align: center;
-    padding: 10px;
-}
-
-.download-content {
-    display: grid;
-}
-
-.d-item {
-    border: 1px solid black;
-    padding: 5px;
-    margin: 10px;
-}
-
-.d-item p {
-    display: inline;
-    float: left;
-}
-
-.d-item a {
-    display: inline;
-    float: right;
-    background-color: #347aeb;
-    color: white;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 5px;
-}
-
-@media only screen and (min-device-width: 480px) {
-    .d-item a {
-        font-size: 30px;
-    }
-
-    .d-item p {
-        font-size: 30px;
-    }
-    
-    #c4.container > .title {
-        font-size: 50px;
-    }
-
+@media only screen and (min-device-width: 769px) {
     #c3.container > .title {
         font-size: 50px;
     }
@@ -151,12 +106,12 @@ a {
         height: 1000px;
     }
 
-    #c4.container {
-        display: block;
+    .item-title {
+        font-size: 50px;
     }
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 768px) {
     .title {
         font-size: 80px;
     }
@@ -170,19 +125,11 @@ a {
         font-size: 50px;
     }
 
-    #c3.container {
-        height: auto;
-    }
-
     .item .item-title {
         font-size: 50px;
     }
 
     .item p:not(.item-title) {
         font-size: 30px;
-    }
-
-    #c4.container {
-        display: none;
     }
 }
