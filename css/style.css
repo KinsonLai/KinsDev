@@ -90,17 +90,15 @@
     overflow: auto;
 }
 
-@media only screen and (min-device-width: 769px) {
-    .b1 a {
-        font-size: 20px;
-    }
-
-    .item-title {
-        font-size: 50px;
-    }
+.b1 a {
+    font-size: 20px;
 }
 
-@media only screen and (max-device-width: 768px) {
+.item-title {
+    font-size: 50px;
+}
+
+@media only screen and (max-device-width: 480px) {
     
 
     .b1 a {

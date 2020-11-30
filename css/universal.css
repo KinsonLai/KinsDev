@@ -78,13 +78,11 @@ html {
     background-color: lightslategray;
 }
 
-@media only screen and (min-device-width: 769px) {
-    .title {
-        font-size: 50px;
-    }
+.title {
+    font-size: 50px;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-device-width: 480px) {
     .brand {
         font-size: 60px;       
     }
