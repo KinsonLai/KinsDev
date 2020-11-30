@@ -95,4 +95,8 @@ html {
     .title {
         font-size: 80px;
     }
+
+    .footer {
+        font-size: 30px;
+    }
 }
