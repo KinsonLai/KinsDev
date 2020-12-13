@@ -80,7 +80,6 @@ html {
 
 .title {
     font-size: 50px;
-    font-weight: bold;
 }
 
 @media only screen and (max-device-width: 480px) {

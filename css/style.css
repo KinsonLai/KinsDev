@@ -98,6 +98,16 @@
     font-size: 50px;
 }
 
+.frame-container {
+    display: flex;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
 @media only screen and (max-device-width: 480px) {
     .b1 a {
         font-size: 50px;
@@ -114,5 +124,9 @@
 
     .item p:not(.item-title) {
         font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 40px;
     }
 }
