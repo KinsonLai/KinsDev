@@ -4,12 +4,12 @@
         <meta name="viewpoint" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="/css/universal.css">
-        <link rel="stylesheet" href="/b_apps_css/ran-num.css">
+        <link rel="stylesheet" href="/b_apps_css/num-guess.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
         <title>Random Number Picker</title>
-        <script src="/js/random.js"></script>
+        <script src="/js/guessing.js"></script>
     </head>
     <body>
         <section>
@@ -22,17 +22,19 @@
                 </ul>
             </header>
             <div class="container" id="c1">
-                <p class="title">Random Number Picker</p>
+                <p class="title">Number Guessing Game</p>
                 <p style="text-align: center;">Made by KinsonLai</p>
                 <div class="app-ui">
-                    <p class="output-num" id="output-num">0</p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <p class="output-num" id="min-num">0</p>
+                        <p style="margin-left: 10px; margin-right: 10px; font-size: 30px;" id="result">to</p>
+                        <p class="output-num" id="max-num">0</p>
+                    </div>
                     <div class="range-input-boxes">
-                        <input type="text" class="box" id="input-1">
-                        <p style="margin: 0px; font-size: 20px;">to</p>
-                        <input type="text" class="box" id="input-2">                                 
+                        <input type="text" style="visibility: hidden;" class="box" id="input" autocomplete="off">                             
                     </div>
                     <div class="b-container">
-                        <button onclick="GenerateRandomNumber();" style="position: relative; bottom: -10px;">Draw</button>
+                        <button onclick="StartGame();" style="position: relative; bottom: -10px;" id="start-guess-button">Start</button>
                     </div>
                 </div>
             </div>
