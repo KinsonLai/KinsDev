@@ -15,7 +15,6 @@ function StartGame() {
     getID("max-num").innerHTML = 100;
     getID("start-guess-button").innerHTML = "guess";
     let a = GenerateRandomNumber(1, 100);
-    console.log(`for testing: the correct number is ${a}`);
     getID("start-guess-button").setAttribute("onclick", `GameLoop(${a});`);   
 }
 
@@ -36,6 +35,43 @@ function GameLoop(r) {
             getID("result").innerHTML = `Correct, You have tried ${times} times.`;
             getID("start-guess-button").innerHTML = "play again";
             getID("start-guess-button").setAttribute("onclick", `StartGame()`)
+        }
+        else if (user_input == "hard mode") {
+            getID("min-num").innerHTML = 1;
+            getID("max-num").innerHTML = 10000;
+            var hr = GenerateRandomNumber(1, 10000);
+            times = 0;
+            getID("start-guess-button").setAttribute("onclick", `GameLoop(${hr});`);
+        }
+        else if (user_input == "test") {
+            times -- 
+            alert(`r is ${r}`);
+        }
+    }
+    getID("input").value = "";
+}
+
+function HardMode(r) {
+    times ++
+    let user_input = getID("input").value;
+    if (user_input != "") {
+        if (user_input < r) {
+            getID("min-num").innerHTML = user_input;
+        }
+        else if (user_input > r) {
+            getID("max-num").innerHTML = user_input;
+        }
+        else if (user_input == r) {
+            getID("input").style.visibility = "hidden";
+            getID("min-num").style.display = "none";
+            getID("max-num").style.display = "none";
+            alert(`(hard mode) Correct, You have tried ${times} times.`);
+            getID("start-guess-button").innerHTML = "play again";
+            getID("start-guess-button").setAttribute("onclick", `StartGame()`)
+        }
+        else if (user_input == "test") {
+            times -- 
+            alert(`(hard mode) r is ${r}`);
         }
     }
     getID("input").value = "";
