@@ -51,32 +51,6 @@ function GameLoop(r) {
     getID("input").value = "";
 }
 
-function HardMode(r) {
-    times ++
-    let user_input = getID("input").value;
-    if (user_input != "") {
-        if (user_input < r) {
-            getID("min-num").innerHTML = user_input;
-        }
-        else if (user_input > r) {
-            getID("max-num").innerHTML = user_input;
-        }
-        else if (user_input == r) {
-            getID("input").style.visibility = "hidden";
-            getID("min-num").style.display = "none";
-            getID("max-num").style.display = "none";
-            alert(`(hard mode) Correct, You have tried ${times} times.`);
-            getID("start-guess-button").innerHTML = "play again";
-            getID("start-guess-button").setAttribute("onclick", `StartGame()`)
-        }
-        else if (user_input == "test") {
-            times -- 
-            alert(`(hard mode) r is ${r}`);
-        }
-    }
-    getID("input").value = "";
-}
-
 function GenerateRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
