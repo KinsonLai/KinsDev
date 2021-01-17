@@ -22,10 +22,10 @@ function GameLoop(r) {
     times ++
     let user_input = getID("input").value;
     if (user_input != "") {
-        if (user_input < r) {
+        if (user_input < r && user_input >= 1) {
             getID("min-num").innerHTML = user_input;
         }
-        else if (user_input > r) {
+        else if (user_input > r && user_input <= 100) {
             getID("max-num").innerHTML = user_input;
         }
         else if (user_input == r) {
@@ -48,6 +48,11 @@ function GameLoop(r) {
             alert(`r is ${r}`);
         }
     }
+
+    if (user_input < 1 || user_input > 100) {
+        times --
+    }
+
     getID("input").value = "";
 }
 
