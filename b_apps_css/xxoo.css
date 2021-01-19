@@ -1,0 +1,16 @@
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    padding: 50px;
+    margin: 2px;
+    background-color: lightblue;
+    border: 2px solid black;
+}
+
+.grid:hover {
+    background-color: white;
+}
