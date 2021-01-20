@@ -53,10 +53,10 @@ function reset() {
     t = [];
     win = false;
     document.getElementById("status").innerHTML = "X's turn";
-    var y = document.getElementsByClassName("grid");
+    var y = document.getElementsByClassName("grid-text");
     var i;
     for (i = 0; i < y.length; i++) {
-        y[i].innerHTML = "(:";
+        y[i].innerHTML = "";
         y[i].style.color = "lightblue";
     }
     document.getElementById("reset-button").style.display = "none";
