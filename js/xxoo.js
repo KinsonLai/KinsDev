@@ -38,6 +38,11 @@ function selected(p) {
             win = true;
             document.getElementById("reset-button").style.display = "";
         }
+        else if (t.length == 9) {
+            document.getElementById("status").innerHTML = "Draw"
+            win = true
+            document.getElementById("reset-button").style.display = "";
+        }
     }
 }
 
