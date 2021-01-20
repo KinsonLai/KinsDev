@@ -41,9 +41,13 @@
         font-size: 50px;
     }
 
+    .grid:hover {
+        background-color: lightblue;
+    }
+
     #reset-button {
         padding: 50px;
         margin-top: 70px;
         font-size: 50px;
-    }
+    }    
 }
