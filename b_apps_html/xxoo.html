@@ -24,9 +24,9 @@
             </header>
             <div class="container" id="c1">
                 <p class="title">XXOO Game</p>
-                <p style="text-align: center;">Made by KinsonLai</p>
+                <p style="text-align: center;" id="t">Made by KinsonLai</p>
                 <div class="app-ui">
-                    <p style="margin: 30px; text-align: center; font-size: 30px;" id="status">X's turn</p>
+                    <p id="status">X's turn</p>
                     <div class="grid-container">
                         <div class="grid" id="1" onclick="selected(1);" style="color: lightblue;">(:</div>
                         <div class="grid" id="2" onclick="selected(2);" style="color: lightblue;">(:</div>
@@ -43,7 +43,7 @@
                         <div class="grid" id="9" onclick="selected(9);" style="color: lightblue;">(:</div>   
                     </div>
                     <div style="display: flex; justify-content: center;">
-                        <button onclick="reset();" style="padding: 15px; margin-top: 30px; display: none;" id="reset-button">Play again</button>
+                        <button onclick="reset();" id="reset-button">Play again</button>
                     </div>
                 </div>
             </div>
